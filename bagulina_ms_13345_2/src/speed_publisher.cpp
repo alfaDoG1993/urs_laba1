@@ -19,6 +19,7 @@ void speed_callback(const geometry_msgs::Twist &msg)
 
 int main(int argc, char **argv)
 {
+    double coef = 2.23694; //coef for meters ps to miles ph
     ros::init(argc, argv, "speed_publisher_node");
     ros::NodeHandle nh("~");
 
@@ -36,9 +37,9 @@ int main(int argc, char **argv)
     while(ros::ok())
     {
         geometry_msgs::Twist out_msg;
-        out_msg.linear.x = received_speed.linear.x*0.44704;
-        out_msg.linear.y = received_speed.linear.y*0.44704;
-        out_msg.linear.z = received_speed.linear.z*0.44704;
+        out_msg.linear.x = received_speed.linear.x*coef;
+        out_msg.linear.y = received_speed.linear.y*coef;
+        out_msg.linear.z = received_speed.linear.z*coef;
         out_msg.angular = received_speed.angular;
         speed_publisher.publish(out_msg); //отправили сообщение
         ros::spinOnce(); //спим до следующего цикла (запускаем процесс в цикле while 1 раз)
