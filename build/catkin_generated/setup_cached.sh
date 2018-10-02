@@ -7,8 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/leonid/Projects/ROS_prj_norm/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/leonid/Projects/ROS_prj_norm/devel/lib:$LD_LIBRARY_PATH"
 export PWD="/home/leonid/Projects/ROS_prj_norm/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/leonid/Projects/ROS_prj_norm/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/leonid/Projects/ROS_prj_norm/src:$ROS_PACKAGE_PATH"

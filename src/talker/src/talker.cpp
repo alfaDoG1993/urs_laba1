@@ -36,20 +36,23 @@ int main(int argc, char **argv)
   std_msgs::Bool ans;
 
   while (ros::ok()) {
-       if (get_new_messege == true)
-        {
-      if (messege_num == 0)
+      if (get_new_messege == true)
       {
-        messege_num += 1;
-        first_messege = messege;
-        get_new_messege = false;
+        if (messege_num == 0)
+        {
+          messege_num += 1;
+          first_messege = messege;
+          get_new_messege = false;
+        }
+        else
+        {
+          second_messege = messege;
+          ans.data = first_messege ^ second_messege;
+          messege_publisher.publish(ans);
+          get_new_messege = false;
+          messege_num = 0;
+        }
       }
-
-      second_messege = messege;
-      ans.data = first_messege ^ second_messege;
-      messege_publisher.publish(ans);
-      get_new_messege = false;
-    }
 
     ros::spinOnce();
     loop_rate.sleep();
