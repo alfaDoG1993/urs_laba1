@@ -1,4 +1,0 @@
-# Hashes of file build rules.
-1e924981c1f07524fffe2460d99b6be3 /home/leonid/Projects/ROS_prj_norm/devel/share/roseus/ros/talker/manifest.l
-6ed9e08f7a046b06a8807f4bc71a3b16 CMakeFiles/clean_test_results
-db625a05338998dc3b00de0366f32db5 talker/CMakeFiles/talker_generate_messages_eus

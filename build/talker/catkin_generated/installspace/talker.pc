@@ -1,8 +1,0 @@
-prefix=/home/leonid/Projects/ROS_prj_norm/install
-
-Name: talker
-Description: Description of talker
-Version: 0.0.0
-Cflags: -I/home/leonid/Projects/ROS_prj_norm/install/include
-Libs: -L/home/leonid/Projects/ROS_prj_norm/install/lib -ltalker
-Requires: roscpp std_msgs
