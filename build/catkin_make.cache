@@ -1,2 +1,0 @@
-talker
--G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/leonid/Projects/ROS_prj_norm/devel -DCMAKE_INSTALL_PREFIX=/home/leonid/Projects/ROS_prj_norm/install
